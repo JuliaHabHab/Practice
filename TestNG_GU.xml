@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test GU">
+    <test name="UI testing GU">
+        <classes>
+            <class name="GUTest.PageTest.LoginTestGU">
+            <methods>
+                <include name="LoginTest_correct_LoggedToApp"/>
+            </methods>
+        </class>
+            <class name="GUTest.PageTest.PaymentsPerChildTest">
+                <methods>
+                    <include name="sendingApplicationForChildBenefits()"/>
+                </methods>
+            </class>
+            <class name="GUTest.PageTest.InternationalPassportRFTest">
+                <methods>
+                    <include name="checkObtainingAnOldStylePassport()"/>
+                </methods>
+            </class>
+            <class name="GUTest.PageTest.AppointmentWithADoctorTestGU">
+                <methods>
+                    <include name="doctorAppointment_correct_TicketReceived()"/>
+                </methods>
+            </class>
+            <class name="GUTest.PageTest.ExtractsFromTheEGRNTest">
+                <methods>
+                    <include name="requestExtractEGRNRealEstateObjects()"/>
+                </methods>
+            </class>
+            <class name="GUTest.PageTest.MVDTestGU">
+                <methods>
+                    <include name="checkObtainingAnOldStylePassport()"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
